@@ -1,0 +1,14 @@
+{
+  "todo": [
+    {
+      "activity": "Minum",
+      "isFinished": true,
+      "id": 2
+    },
+    {
+      "activity": "Istirahat",
+      "isFinished": false,
+      "id": 3
+    }
+  ]
+}

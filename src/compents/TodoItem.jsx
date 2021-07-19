@@ -11,19 +11,22 @@ class TodoItem extends React.Component {
   render() {
     return (
       <div className="w-25 my-1 d-flex flex-row justify-content-between align-items-center">
-        {this.props.TodoData.activity} ID: {this.props.TodoData.id}
+        {this.props.todoData.activity} ID: {this.props.todoData.id}
         <div>
           <button
-            onClick={() => this.props.deleteTodoHandler(this.props.TodoData.id)}
+            onClick={() => this.props.deleteTodoHandler(this.props.todoData.id)}
             className="btn btn-danger"
           >
             Delete
           </button>
           <button
-            onClick={() => this.completeBtnHandler("complete")}
+            disabled={this.props.todoData.isFinished}
+            onClick={() =>
+              this.props.completeTodoHandler(this.props.todoData.id)
+            }
             className="btn btn-primary"
           >
-            Complete
+            {this.props.todoData.isFinished ? "Finished" : "complete"}
           </button>
         </div>
       </div>
