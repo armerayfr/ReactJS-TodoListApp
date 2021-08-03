@@ -1,14 +1,24 @@
 {
   "todo": [
     {
-      "activity": "Minum",
-      "isFinished": true,
+      "activity": "Makan",
+      "isFinished": false,
       "id": 2
     },
     {
-      "activity": "Istirahat",
+      "activity": "Minum",
       "isFinished": false,
       "id": 3
+    },
+    {
+      "activity": "Coding",
+      "isFinished": false,
+      "id": 4
+    },
+    {
+      "activity": "Berenang",
+      "isFinished": false,
+      "id": 5
     }
   ]
 }
